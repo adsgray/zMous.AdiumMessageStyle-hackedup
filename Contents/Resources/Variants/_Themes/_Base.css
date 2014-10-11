@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+*
+{
+	font-size: 100% !important;
+	text-decoration: none !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	//border-bottom: 1px solid green !important;
+	//text-decoration: line-through !important;
+}
+
+body 
+{
+	margin: 0px;
+	//overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+#Chat
+{
+	padding-bottom: 8px;
+	padding-top: 8px;
+	//overflow-x: hidden;
+	//word-wrap: break-word;
+}
+
+.xxxiconsmall,
+.xxxsender,
+.xxxmark,
+.xxxmessage,
+.xxxtime
+{
+	display: table-cell;
+}
+
+:not(.date_separator) + .date_separator .xxxmessage,
+.history + :not(.history) .xxxmessage
+{
+	padding-top: 1.6em;
+}
+
+.outgoing,
+.incoming,
+.status,
+.event
+{
+	display: table-row;
+	position: relative;
+}
+
+.outgoing,
+.incoming,
+.status,
+.event,
+.xxxmark,
+.xxxmessage
+{
+/*	-webkit-transition: background-color .4s linear;*/
+}
+
+.status .xxxiconsmall,
+.event .xxxiconsmall,
+.consecutive .xxxiconsmall,
+.history .xxxiconsmall
+{
+	//visibility: hidden;
+	display: none;
+}
+.xxxiconsmall[src*="buddy_icon.png"]
+{
+	display: none;
+	//visibility: hidden;
+	//height: 0em;
+}
+
+.xxxiconsmall
+{
+	max-height: 1.3em;
+	max-width: 1.3em;
+	//margin-top: .3ex;
+	//margin-left: .3ex;
+	padding-left: 8px;
+	opacity: .875;
+}
+
+.xxxiconlarge
+{
+	width: auto;
+	height: auto;
+	//margin-top: .3ex;
+	//margin-left: .3ex;
+	opacity: .875;
+}
+
+.xxxsender
+{
+	max-width: 10em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 8px;
+	font-size: .75em !important;
+}
+
+.xxxmessage
+{
+	padding-left: .5em;
+	padding-right: .5em;
+	//padding-top: .2em;
+	//padding-bottom: .0em;
+	max-width: 90%;
+	width: 100%;
+	line-height: 1.4em;
+}
+
+.consecutive .xxxmessage
+{
+	//padding-top: .0em;
+}
+
+#Chat > div:first-of-type .xxxmessage
+{
+	padding-top: .3em;
+}
+
+#Chat > div.message:last-of-type .xxxmessage
+{
+	padding-bottom: .3em;
+}
+
+.emoticon
+{
+	white-space: nowrap;
+	text-wrap: suppress;
+	word-wrap: normal;
+}
+
+img.emoticon
+{
+	//max-height: 1.08em;
+	max-height: 1.18em;
+	width: auto;
+	position: relative;
+	top: 0px;
+	vertical-align: top;
+	opacity: .75;
+}
+
+.history img.emoticon 
+{
+	//opacity: .375;
+}
+
+.history .xxxmessage:hover img.emoticon
+{
+	//opacity: .625;
+}
+
+.xxxtime
+{
+	white-space: nowrap;
+	text-align: right;
+	//padding-left: .5em;
+	padding-right: 8px;
+	padding-left: 4px;
+	font-size: .5em !important;
+}
+
+xxxinsert
+{
+	display: block;
+}
+
+/*----------*/
+
+.mention,
+.mention .xxxmark,
+.mention .xxxmessage
+{
+	background-color: rgba(240, 208, 208, .8);
+}
+
+.incoming.notification,
+.incoming.notification .xxxmark,
+.incoming.notification .xxxmessage
+{
+	background-color: rgba(240, 240, 160, .8);
+}
+
+/*----------*/
+
+#Chat
+{
+	background-color: rgba(160, 160, 160, 1);
+}
+
+.history
+{
+	text-shadow: .0em .1em .2em rgba(255, 255, 255, .4);
+	opacity: .8;
+}
+.outgoing,
+.incoming,
+.status,
+.event
+{
+	background-color: rgba(232, 232, 232, 1);
+}
+
+.status .xxxsender,
+.event .xxxsender
+{
+	color: transparent !important;
+}
+
+.xxxsender
+{
+	border-width: 1px;
+	border-right-style: solid;
+	border-color: rgba(160, 160, 160, 1);
+}
+
+.xxxmark,
+.xxxmessage
+{
+	background-color: white;
+}
+
+.xxxtime
+{
+	border-width: 1px;
+	border-left-style: solid;
+	border-color: rgba(160, 160, 160, 1);
+}
+
+/*----------*/
+
+a:link
+{
+	border-bottom: 1px dotted;
+}
+
+a:hover
+{
+	border-bottom: 1px solid;
+}
+
+a:active
+{
+	border-bottom: 2px double;
+}
+
+a:link
+{
+	color: inherit;
+}
+
+a:link:hover
+{
+	color: inherit;
+}
+
+.groupchat .xxxhover,
+.groupchat .xxxhover .xxxmark,
+.groupchat .xxxhover .xxxmessage
+{
+	background-color: hsla(0, 0%, 85%, .9) !important;
+}

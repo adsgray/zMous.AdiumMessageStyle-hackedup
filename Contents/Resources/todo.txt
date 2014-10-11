@@ -1,0 +1,33 @@
+
+Any way to make mark/message background stretch to top when when there isn't enough text to fill the screen?
+
+prevent horizontal scrollbars!!! max-width: % is broken. max-width: unit works. :( Use JS to calculate width of xxxmessage=windowwidth-xxxiconsmall-xxxiconlarge-xxxsender-xxxmark-xxxtime.
+
+changing between consecutive messages causes background flashing, probably due to js iteration lag.
+
+js iteration lag is a problem when scrollback gets huge.
+
+Are emoticons a pixel too big? at 9pt and 12pt, but not 10pt and 11pt. and only for messages containging only an emoticon.
+
+remove shadow on xtracolor marks?
+
+
+#redo #chat background as border-top/bottom? probably involves redoing history.
+
+implemented yellow background for notifications (buzz) (broken)
+
+
+CHANGES:
+Misc minor tweaks.
+
+implemented red background when mentioned in groupchat 
+replaced + variants with XtraColor variants, which assigns a (probably) unique color to each person. Also, consecutive messaegs from the same person still display the sendername.
+made emoticons in message history a little less faint.
+fixed action asterisks
+switched all colors to from rgba to hsla
+
+
+
+¥ Hovering the cursor over any message will highlight that message. As of Adium 1.3, hovering the cursor over the sender column in a groupchat will highlight all other messages from that sender. Obviously, this only works if the sender column is visible. Thanks go to Catfish Man for the javascript.
+
+¥ The XtraColor variants display a small per-user color block between the sender and the message.

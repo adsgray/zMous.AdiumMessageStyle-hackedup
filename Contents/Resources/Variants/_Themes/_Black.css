@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.xxxicon,
+.xxxsender,
+.xxxtime
+{
+	border-top: 0px none transparent !important;
+}
+
+.xxxwrapper
+{
+	background-color: rgb(23,23,23) !important;    
+}
+
+.xxxmark,
+.xxxmessage
+{
+	border-top: 0px none transparent !important;
+    background-color:black;
+}
+
+
+.consecutive .xxxsender
+{
+	//visibility: hidden;
+	color: transparent;
+}
+
+/*----------*/
+
+.groupchat .xxxhover,
+.groupchat .xxxhover .xxxmark,
+.groupchat .xxxhover .xxxmessage
+{
+	background-color: hsla(0, 0%, 30%, .9) !important;
+}
+
+/*----------*/
+
+.outgoing
+{
+	color: hsla(0, 42%, 70%, .8) !important;
+}
+
+.outgoing .xxxmark
+{
+/*	color: hsla(0, 42%, 40%, .7) !important;
+	background-color: hsla(0, 0%, 100%, 1) !important; */
+	color: hsla(0, 42%, 70%, .8) !important;
+	background-color: hsla(0, 0%, 0%, 1) !important;
+}
+
+.outgoing:hover,
+.outgoing:hover .xxxmark,
+.outgoing:hover .xxxmessage
+{
+	color: hsla(0, 70%, 60%, 1) !important;
+	background-color: hsla(0, 0%, 20%, .9) !important;
+	text-shadow: .0em .1em .2em hsla(0, 100%, 60%, .8);
+}
+
+/*----------*/
+
+.incoming
+{
+	color: hsla(240, 0%, 100%, .8) !important;
+}
+
+.incoming .xxxmark
+{
+//	background-color: hsla(0, 0%, 100%, 1) !important;
+    background-color: black !important;
+//	color: hsla(240, 0%, 0%, .7) !important;
+    color: hsla(0, 0%, 80%, .7) !important;
+}
+
+.incoming:hover,
+.incoming:hover .xxxmark,
+.incoming:hover .xxxmessage
+{
+	color: hsla(240, 0%, 100%, 1) !important;
+	background-color: hsla(0, 0%, 20%, .9) !important;
+	text-shadow: .0em .1em .2em hsla(0, 0%, 100%, .8);
+}
+
+/*----------*/
+
+.status,
+.event
+{
+	color: hsla(0, 0%, 65%, .8) !important;
+}
+
+.status .xxxmark,
+.event .xxxmark
+{
+	color: hsla(0, 0%, 60%, .7) !important;
+	background-color: hsla(0, 0%, 0%, 1) !important;
+}
+
+.status:hover,
+.status:hover .xxxmark,
+.status:hover .xxxmessage,
+.event:hover,
+.event:hover .xxxmark,
+.event:hover .xxxmessage
+{
+	color: hsla(0, 0%, 70%, 1) !important;
+	background-color: hsla(0, 0%, 20%, .9) !important;
+	text-shadow: .0em .1em .2em hsla(0, 0%, 50%, .8);
+}
+
+
+/*--------- border adjustments -----------*/
+
+.xxxsender
+{
+	border-width: 1px;
+	border-right-style: solid;
+	border-color: rgba(42, 42, 42, 1);
+}
+
+.xxxtime
+{
+	border-width: 1px;
+	border-left-style: solid;
+	border-color: rgba(42, 42, 42, 1);
+}

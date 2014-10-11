@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+#Chat
+{
+}
+
+body
+{
+    background-color:black;
+}
+
+.xxxwrapper
+{
+    background-color:black;
+}
+
+.xxxmessage
+{
+	border-top: 0px none transparent !important;
+    background-color:black;
+}
+
+.xxxtime,
+.xxxmark,
+.xxxicon,
+.xxxsender
+{
+	border-top: 0px none transparent !important;
+    background-color:gray;
+}
+
+.consecutive .xxxsender
+{
+	//visibility: hidden;
+	color: transparent;
+}
+
+/*----------*/
+
+.groupchat .xxxhover,
+.groupchat .xxxhover .xxxmark,
+.groupchat .xxxhover .xxxmessage
+{
+	background-color: gray;
+}
+
+/*----------*/
+
+.outgoing
+{
+	color: hsla(0, 100%, 60%, .8) !important;
+}
+
+.outgoing .xxxmark
+{
+	color: hsla(20, 100%, 100%, .7) !important;
+	background-color: hsla(0, 0%, 0%, 1) !important;
+}
+
+.outgoing:hover,
+.outgoing:hover .xxxmark,
+.outgoing:hover .xxxmessage
+{
+	color: hsla(0, 42%, 30%, 1) !important;
+	background-color: hsla(0, 0%, 0%, .9) !important;
+	text-shadow: .0em .1em .2em hsla(0, 0%, 0%, .8);
+}
+
+/*----------*/
+
+.incoming
+{
+	color: hsla(240, 0%, 0%, .8) !important;
+}
+
+.incoming .xxxmark
+{
+	background-color: hsla(0, 0%, 100%, 1) !important;
+	color: hsla(240, 0%, 0%, .7) !important;
+}
+
+.incoming:hover,
+.incoming:hover .xxxmark,
+.incoming:hover .xxxmessage
+{
+	color: hsla(240, 0%, 0%, 1) !important;
+	background-color: hsla(0, 0%, 85%, .9) !important;
+	text-shadow: .0em .1em .2em hsla(0, 0%, 100%, .8);
+}
+
+/*----------*/
+
+.status,
+.event
+{
+	color: hsla(0, 0%, 60%, .8) !important;
+}
+
+.status .xxxmark,
+.event .xxxmark
+{
+	color: hsla(0, 0%, 60%, .7) !important;
+	background-color: hsla(0, 0%, 100%, 1) !important;
+}
+
+.status:hover,
+.status:hover .xxxmark,
+.status:hover .xxxmessage,
+.event:hover,
+.event:hover .xxxmark,
+.event:hover .xxxmessage
+{
+	color: hsla(0, 0%, 40%, 1) !important;
+	background-color: hsla(0, 0%, 85%, .9) !important;
+	text-shadow: .0em .1em .2em hsla(0, 0%, 100%, .8);
+}
