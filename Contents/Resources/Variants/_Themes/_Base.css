@@ -61,23 +61,24 @@ body
 }
 
 .xxxsender.jenkins-sender {
-    color: red;
+    color: #CC2900;
 }
 
 .xxxsender.github-sender {
-    color: blue;
+    /*color: #4775FF;*/
+    color: #85A3FF;
 }
 
-.xxxmessage.jenkins-sender {
-    color: green;
+.xxxmessage.jenkins-message {
+    color: #00CC00;
 }
 
 .xxxmessage.jenkins-message.fail {
-    color: red;
+    color: #CC2900;
 }
 
 .xxxmessage.github-message {
-    color: blue;
+    color: #85A3FF;
 }
 
 .status .xxxiconsmall,
