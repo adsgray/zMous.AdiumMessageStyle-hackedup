@@ -24,6 +24,7 @@ function hasClass(element, cls) {
 
 function addClass(node, klass) {
     if (node != null && klass != null) {
+        //trace("adding " + klass + " to " + node);
         node.className = node.className + " " + klass;
     }
 }
@@ -74,7 +75,9 @@ function colorsenders() {
     // "colorsenderdone" to them.
     // Not even sure if that works...
 
-    var nodes = document.querySelectorAll('div.xxxwrapper:not([class="' + doneclass + '"])');
+    var nodes = document.querySelectorAll('div.xxxwrapper:not(.' + doneclass + ')');
+
+    //trace("found " + nodes.length);
 
     for (var ct = 0; ct < nodes.length; ct++) {
       do_colorsender(nodes[ct]);
