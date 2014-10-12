@@ -1,1 +1,16 @@
 <script src="./alignchat.js" type="text/javascript" charset="utf-8"></script>
+<div id="debugdiv">
+</div>
+
+<script src="./colorsenders.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+    // terrible "loop"
+    function dostuff() {
+        colorsenders();
+        setTimeout(function(){dostuff();}, 2000);
+    }
+
+    dostuff();
+
+</script>

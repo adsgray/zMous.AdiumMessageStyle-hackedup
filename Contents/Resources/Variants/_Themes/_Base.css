@@ -6,8 +6,8 @@
 	text-decoration: none !important;
 	font-style: normal !important;
 	font-weight: normal !important;
-	//border-bottom: 1px solid green !important;
-	//text-decoration: line-through !important;
+	/*border-bottom: 1px solid green !important;*/
+	/*text-decoration: line-through !important;*/
 }
 
 body 
@@ -60,6 +60,26 @@ body
 /*	-webkit-transition: background-color .4s linear;*/
 }
 
+.xxxsender.jenkins-sender {
+    color: red;
+}
+
+.xxxsender.github-sender {
+    color: blue;
+}
+
+.xxxmessage.jenkins-sender {
+    color: green;
+}
+
+.xxxmessage.jenkins-message.fail {
+    color: red;
+}
+
+.xxxmessage.github-message {
+    color: blue;
+}
+
 .status .xxxiconsmall,
 .event .xxxiconsmall,
 .consecutive .xxxiconsmall,
@@ -110,8 +130,8 @@ body
 {
 	padding-left: .5em;
 	padding-right: .5em;
-	//padding-top: .2em;
-	//padding-bottom: .0em;
+	/*padding-top: .2em;*/
+	/*padding-bottom: .0em;*/
 	max-width: 90%;
 	width: 100%;
 	line-height: 1.4em;
@@ -119,7 +139,7 @@ body
 
 .consecutive .xxxmessage
 {
-	//padding-top: .0em;
+	/*padding-top: .0em;*/
 }
 
 #Chat > div:first-of-type .xxxmessage
@@ -141,7 +161,7 @@ body
 
 img.emoticon
 {
-	//max-height: 1.08em;
+	/*max-height: 1.08em;*/
 	max-height: 1.18em;
 	width: auto;
 	position: relative;
@@ -152,19 +172,19 @@ img.emoticon
 
 .history img.emoticon 
 {
-	//opacity: .375;
+	/*opacity: .375;*/
 }
 
 .history .xxxmessage:hover img.emoticon
 {
-	//opacity: .625;
+	/*opacity: .625;*/
 }
 
 .xxxtime
 {
 	white-space: nowrap;
 	text-align: right;
-	//padding-left: .5em;
+	/*padding-left: .5em;*/
 	padding-right: 8px;
 	padding-left: 4px;
 	font-size: .5em !important;
