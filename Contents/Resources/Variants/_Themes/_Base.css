@@ -35,6 +35,8 @@ body
 	display: table-cell;
 }
 
+.xxxmark { display: none; }
+
 :not(.date_separator) + .date_separator .xxxmessage,
 .history + :not(.history) .xxxmessage
 {
