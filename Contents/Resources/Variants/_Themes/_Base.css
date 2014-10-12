@@ -61,12 +61,12 @@ body
 }
 
 .xxxsender.jenkins-sender {
-    color: #CC2900;
+    color: #CC2900 !important;
 }
 
 .xxxsender.github-sender {
     /*color: #4775FF;*/
-    color: #85A3FF;
+    color: #85A3FF !important;
 }
 
 .xxxmessage.jenkins-message {
@@ -124,7 +124,7 @@ body
 	text-align: right;
 	padding-right: 4px;
 	padding-left: 8px;
-	font-size: .75em !important;
+    font-size: 1em !important;
 }
 
 .xxxmessage
