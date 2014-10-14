@@ -11,6 +11,13 @@ var colormap = [
     {"pattern": /Github/i, "name": "github-sender", "message": "github-message",
         "messagemap": []
     },
+    {"pattern": /PagerDuty/i, "name": "pagerduty-sender", "message": "pagerduty-message",
+        "messagemap" : [ 
+           { "pattern": /incident.*triggered/i, "message" : "triggered" },
+           { "pattern": /incident.*acknowledged/i, "message" : "acknowledged" },
+           { "pattern": /incident.*resolved/i, "message" : "resolved" },
+        ]
+    },
 ];
 
 var senderSelector = ".xxxsender";
