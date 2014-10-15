@@ -6,7 +6,10 @@
 // pattern: regex, message: (additional) css class for message
 var colormap = [
     {"pattern": /Jenkins/i, "name": "jenkins-sender", "message": "jenkins-message",
-        "messagemap" : [ { "pattern": /failure/i, "message" : "fail" } ]
+        "messagemap" : [ 
+            { "pattern": /failure/i, "message" : "fail" },
+            { "pattern": /MERGE FREEZE/i, "message" : "mergefreeze" } 
+        ]
     },
     {"pattern": /Github/i, "name": "github-sender", "message": "github-message",
         "messagemap": []
