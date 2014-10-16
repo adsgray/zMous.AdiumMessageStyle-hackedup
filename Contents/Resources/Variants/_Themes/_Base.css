@@ -104,6 +104,10 @@ body
     color: #00CC00;
 }
 
+.xxxmessage.pagerduty-message.escalated {
+    color: #FF5CAD;
+}
+
 .status .xxxiconsmall,
 .event .xxxiconsmall,
 .consecutive .xxxiconsmall,
@@ -186,12 +190,12 @@ body
 img.emoticon
 {
 	/*max-height: 1.08em;*/
-	max-height: 1.18em;
+	max-height: 1.5em;
 	width: auto;
 	position: relative;
 	top: 0px;
 	vertical-align: top;
-	opacity: .75;
+	opacity: .95;
 }
 
 .history img.emoticon 

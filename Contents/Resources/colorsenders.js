@@ -19,6 +19,7 @@ var colormap = [
            { "pattern": /incident.*triggered/i, "message" : "triggered" },
            { "pattern": /incident.*acknowledged/i, "message" : "acknowledged" },
            { "pattern": /incident.*resolved/i, "message" : "resolved" },
+           { "pattern": /incident.*escalated/i, "message" : "escalated" },
         ]
     },
 ];
